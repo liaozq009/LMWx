@@ -1,0 +1,65 @@
+/**index.wxss**/
+.flight-select{
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+}
+.flight-select>view{
+  position: relative;
+}
+.flight-select>view::after{
+  content: '';
+  position: absolute;
+  bottom:-20rpx;
+  left: 50%;
+  display: none;
+  margin-left: -70rpx;
+  width: 140rpx;
+  height: 4rpx;
+  background: #1AAD19;
+}
+.flight-select>view.active{
+  color:#1AAD19;
+}
+.flight-select>view.active:after{
+  display: block;
+}
+.flight-city{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-top: 20rpx;
+  padding:30rpx;
+}
+.flight-city>view .f-city-title,.flight-city>view .t-city-title{
+ font-size: 24rpx;
+ margin-bottom: 20rpx;
+ color:#808080;
+}
+.f-city-icon>image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.flight-date{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding:30rpx;
+  border-top: 2rpx solid #eee;
+}
+.flight-date>view .date-title{
+  font-size: 24rpx;
+  color:#808080;
+}
+.flight-search{
+  padding-left: 30rpx;
+  padding-right:30rpx;
+  margin-top: 60rpx;
+}

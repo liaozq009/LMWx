@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="flight-select">
+    <view class="f-select-ow {{activeOw ? 'active' : ''}}" bindtap='flightClick' data-id="ow">单程</view>
+    <view class="f-select-rt {{activeRt ? 'active' : ''}}" bindtap='flightClick' data-id="rt">往返</view>
+  </view>
+  <view class="flight-city">
+    <view class="f-from-city">
+      <view class="f-city-title">出发城市</view>
+      <view class="f-city-content">广州</view>
+    </view>
+    <view class="f-city-icon">
+      <image src='../../images/flight-rt.png'></image>
+    </view>
+    <view class="f-to-city">
+      <view class="t-city-title">到底城市</view>
+      <view class="t-city-content">北京</view>
+    </view>
+  </view>
+  <view class="flight-date">
+    <view class="start-date">
+      <view class="date-title">出发日期</view>
+      <view class="st-date-content">01月30日</view>
+    </view>
+    <view class="end-date">
+      <view class="date-title">出发日期</view>
+      <view class="end-date-content">02月03日</view>
+    </view>
+  </view>
+  <view class="flight-search">
+     <button type='primary' class="flight-search-btn">搜索</button>
+  </view>
+</view>
