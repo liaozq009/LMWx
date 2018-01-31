@@ -7,24 +7,32 @@
   <view class="flight-city">
     <view class="f-from-city">
       <view class="f-city-title">出发城市</view>
-      <view class="f-city-content">广州</view>
+      <picker bindchange='selectFromCity' value='{{index}}' range='{{fromCityArray}}'>
+        <view class="picker f-city-content">{{fromCityVal}}</view>
+      </picker>
     </view>
     <view class="f-city-icon">
       <image src='../../images/flight-rt.png'></image>
     </view>
     <view class="f-to-city">
-      <view class="t-city-title">到底城市</view>
-      <view class="t-city-content">北京</view>
+      <view class="t-city-title">到达城市</view>
+      <picker bindchange='selectToCity' value='{{index}}' range='{{toCityArray}}'>
+        <view class="picker t-city-content">{{toCityVal}}</view>
+      </picker>
     </view>
   </view>
   <view class="flight-date">
     <view class="start-date">
       <view class="date-title">出发日期</view>
-      <view class="st-date-content">01月30日</view>
+      <picker mode="date" value='{{startDate}}' start="{{startMinDate}}" end="{{startMaxDate}}" bindchange='changeStartDate'>
+        <view class="st-date-content">{{startDate}}</view>
+      </picker>
     </view>
-    <view class="end-date">
-      <view class="date-title">出发日期</view>
-      <view class="end-date-content">02月03日</view>
+    <view class="end-date" wx:if="{{activeRt}}">
+      <view class="date-title">到达日期</view>
+      <picker mode="date" value='{{endDate}}' start="{{endMinDate}}" end="{{endMaxDate}}" bindchange='changeEndDate'>
+        <view class="end-date-content">{{endDate}}</view>
+      </picker>
     </view>
   </view>
   <view class="flight-search">
