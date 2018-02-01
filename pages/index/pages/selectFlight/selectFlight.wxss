@@ -4,4 +4,38 @@
   justify-content: space-around;
   font-size: 24rpx;
   text-align: center;
+  padding:20rpx 0;
+  background: #fff;
+}
+.list-mainInfo-time{
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding:20rpx 0;
+  margin-top:20rpx;
+}
+.flight-arrow image{
+  width: 32rpx;
+  height:32rpx;
+}
+.start-place,.end-place,.original-price{
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+.flight-price{
+  color:red;
+}
+.original-price{
+  text-decoration:line-through;
+}
+.list-flightNum{
+  display: flex;
+  justify-content: space-between;
+  padding:10rpx 60rpx 20rpx;
+  background: #fff;
+  font-size: 28rpx;
+}
+.list-flightNum image{
+  width:32rpx;
+  height:32rpx;
 }

@@ -10,6 +10,14 @@ Page({
       { time: '2018-01-02', price: 940 },
       { time: '2018-01-03', price: 800 },
     ],
+    startTime:'07:00',
+    startPlace:'虹桥机场',
+    endTime:'10:00',
+    endPlace:'白云机场',
+    totleTime:'2h',
+    flightNum:'T866',
+    flightPrice:'900',
+    originalPrice:'1100',
   },
 
   /**

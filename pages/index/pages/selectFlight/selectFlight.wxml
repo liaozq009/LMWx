@@ -7,3 +7,34 @@
     </view>
   </block>
 </view>
+<view class="price-list-wrap">
+  <block>
+    <view class="price-list">
+      <view class="list-mainInfo">
+        <view class="list-mainInfo-time">
+          <view class="start-time">
+            <view>{{startTime}}</view>
+            <view class="start-place">{{startPlace}}</view>
+          </view>
+          <view class="flight-arrow">
+            <view><image src='resouce/flight-arrow.png'></image></view>
+            <view>{{totleTime}}</view>
+          </view>
+          <view class="end-time">
+            <view>{{endTime}}</view>
+            <view class="end-place">{{endPlace}}</view>
+          </view>
+          <view class="fligt-price">
+            <view class="flight-price">￥{{flightPrice}}</view>
+            <view class="original-price">￥{{originalPrice}}</view>
+          </view>
+        </view>
+        <view class="list-flightNum">
+          <view>{{flightNum}}</view>
+          <view><image src='resouce/up.png'></image><image src='resouce/down.png'></image></view>
+        </view>
+      </view>
+      <view class="list-detailInfo"></view>
+    </view>
+  </block>
+</view>
