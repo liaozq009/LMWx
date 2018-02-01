@@ -1,0 +1,7 @@
+/* pages/index/pages/selectFlight/selectFlight.wxss */
+.lowPrice-wrap{
+  display: flex;
+  justify-content: space-around;
+  font-size: 24rpx;
+  text-align: center;
+}

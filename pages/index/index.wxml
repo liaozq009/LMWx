@@ -11,7 +11,7 @@
         <view class="picker f-city-content">{{fromCityVal}}</view>
       </picker>
     </view>
-    <view class="f-city-icon">
+    <view class="f-city-icon" bindtap='changeCity'>
       <image src='../../images/flight-rt.png'></image>
     </view>
     <view class="f-to-city">
@@ -36,6 +36,6 @@
     </view>
   </view>
   <view class="flight-search">
-     <button type='primary' class="flight-search-btn">搜索</button>
+     <button type='primary' class="flight-search-btn" bindtap='searchFlight'>搜索</button>
   </view>
 </view>

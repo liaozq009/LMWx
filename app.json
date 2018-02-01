@@ -1,7 +1,11 @@
 {
   "pages":[
+    "pages/index/pages/selectFlight/selectFlight",
     "pages/index/index",
-    "pages/flight/flight"
+    "pages/flightStatus/flightStatus",
+    "pages/index/pages/flightInfo/flightInfo",
+    "pages/index/pages/confirmFlight/confirmFlight",
+    "pages/index/pages/flightPay/flightPay"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -18,10 +22,10 @@
       "selectedIconPath": "images/index-active.png"
     },
     {
-      "pagePath": "pages/flight/flight",
+      "pagePath": "pages/flightStatus/flightStatus",
       "text": "航班动态",
-      "iconPath": "images/flight.png",
-      "selectedIconPath": "images/flight-active.png"
+      "iconPath": "images/flightStatus.png",
+      "selectedIconPath": "images/flightStatus-active.png"
     }]
   }
 }

@@ -57,6 +57,12 @@ Page({
       })
     }
   },
+  changeCity:function(){
+    this.setData({
+      fromCityVal: this.data.toCityVal,
+      toCityVal: this.data.fromCityVal
+    })
+  },
   selectToCity: function (e) {
     if (this.data.fromCityVal == this.data.toCityArray[e.detail.value]){
       wx.showModal({
@@ -78,6 +84,11 @@ Page({
   changeEndDate:function(e){
     this.setData({
       endDate: e.detail.value
+    })
+  },
+  searchFlight:function(){
+    wx.navigateTo({
+      url: '/pages/index/pages/selectFlight/selectFlight',
     })
   },
 })

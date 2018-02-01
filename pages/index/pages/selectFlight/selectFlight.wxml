@@ -1,0 +1,9 @@
+<!--pages/index/pages/selectFlight/selectFlight.wxml-->
+<view class="lowPrice-wrap">
+  <block wx:for="{{lowPrice}}" wx:key="this">
+    <view class="lowPrice-list">
+      <view>{{item.time}}</view>
+      <view>￥{{item.price}}</view>
+    </view>
+  </block>
+</view>
