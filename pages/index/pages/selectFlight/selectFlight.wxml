@@ -8,30 +8,33 @@
   </block>
 </view>
 <view class="price-list-wrap">
-  <block>
+  <block wx:for="{{flightList}}" wx:key="this">
     <view class="price-list">
       <view class="list-mainInfo">
         <view class="list-mainInfo-time">
           <view class="start-time">
-            <view>{{startTime}}</view>
-            <view class="start-place">{{startPlace}}</view>
+            <view>{{item.startTime}}</view>
+            <view class="start-place">{{item.startPlace}}</view>
           </view>
           <view class="flight-arrow">
             <view><image src='resouce/flight-arrow.png'></image></view>
-            <view>{{totleTime}}</view>
+            <view>{{item.totleTime}}</view>
           </view>
           <view class="end-time">
-            <view>{{endTime}}</view>
-            <view class="end-place">{{endPlace}}</view>
+            <view>{{item.endTime}}</view>
+            <view class="end-place">{{item.endPlace}}</view>
           </view>
           <view class="fligt-price">
-            <view class="flight-price">￥{{flightPrice}}</view>
-            <view class="original-price">￥{{originalPrice}}</view>
+            <view class="flight-price">￥{{item.flightPrice}}</view>
+            <view class="original-price">￥{{item.originalPrice}}</view>
           </view>
         </view>
         <view class="list-flightNum">
-          <view>{{flightNum}}</view>
-          <view><image src='resouce/up.png'></image><image src='resouce/down.png'></image></view>
+          <view>{{item.flightNum}}</view>
+          <view>
+            <view wx:if="{{hideFlightInfo}}"><image src='resouce/up.png'></image></view>
+            <view wx:if="{{showFlightInfo}}"><image src='resouce/down.png'></image></view>
+          </view>
         </view>
       </view>
       <view class="list-detailInfo"></view>
