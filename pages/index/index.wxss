@@ -37,7 +37,7 @@
   padding:30rpx;
 }
 .flight-city>view .f-city-title,.flight-city>view .t-city-title{
- font-size: 24rpx;
+ font-size: 28rpx;
  margin-bottom: 20rpx;
  color:#808080;
 }
@@ -55,7 +55,7 @@
   border-top: 2rpx solid #eee;
 }
 .flight-date>view .date-title{
-  font-size: 24rpx;
+  font-size: 28rpx;
   color:#808080;
 }
 .flight-search{

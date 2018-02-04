@@ -1,1 +1,130 @@
 /* pages/index/pages/flightInfo/flightInfo.wxss */
+.flight-hd{
+  padding:20rpx;
+  background: #fff;
+}
+.flight-hd .flight-num{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+.flight-num .flight-rule{
+  color: green;
+}
+.flight-info{
+   display: flex;
+   justify-content: space-around;
+   font-size: 28rpx;
+   margin-top: 30rpx;
+}
+.flight-info .start-time,.flight-info .end-time{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.flight-info .flight-arrow image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.flight-info>view>view{
+  margin-top: 12rpx;
+}
+.flight-detail{
+  padding:20rpx;
+  background: #f8f8f8;
+}
+.flight-detail>view{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+.flight-detail>view text{
+  color:red;
+  margin-right:20rpx;
+}
+.passenger-info image{
+  width: 40rpx;
+  height:40rpx;
+  vertical-align: middle;
+  margin-right:20rpx;
+}
+.passenger-info icon{
+   margin-right:20rpx;
+   position: relative;
+   top: 14rpx;
+}
+.passenger-info .add-passenger{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  padding:20rpx;
+  border-bottom: 2rpx solid #eee;
+  background:#fff;
+}
+.passenger-info .passenger-id{
+  padding:20rpx;
+  background:#fff;
+  overflow: hidden;
+}
+.passenger-info .passenger-id .name-id{
+  font-size: 24rpx;
+  color: #bbb;
+}
+.passenger-info .passenger-id>view{
+  float: left;
+  font-size: 28rpx;
+}
+.passenger-info .passenger-id .p-edit{
+  float: right;
+  position: relative;
+  top: 14rpx;
+}
+.passenger-call{
+  background: #fff;
+}
+.passenger-call>view{
+  display: flex;
+  align-items: center;
+  padding:20rpx;
+  font-size: 24rpx;
+}
+.passenger-call input{
+  margin-left: 20rpx;
+}
+.passenger-call .pas-people{
+  border-bottom: 2rpx solid #eee;
+}
+.insurance{
+  font-size: 28rpx;
+}
+.insurance-hd{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+.insurance-hd image{
+  width: 40rpx;
+  height:40rpx;
+  position: relative;
+  top: 14rpx;
+}
+.insurance-bd{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20rpx;
+  background: #f8f8f8;
+}
+.insurance-bd icon{
+  position: relative;
+  top: 14rpx;
+  margin-left: 16rpx;
+}
+.agree-clause{
+  padding:20rpx;
+  font-size: 28rpx;
+}
+.agree-clause checkbox{
+  margin-right: 20rpx; 
+}

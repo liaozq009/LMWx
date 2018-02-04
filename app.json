@@ -1,9 +1,10 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/flightStatus/flightStatus",
-    "pages/index/pages/selectFlight/selectFlight",
     "pages/index/pages/flightInfo/flightInfo",
+    "pages/index/pages/selectFlight/selectFlight",
+   
+    "pages/flightStatus/flightStatus",
     "pages/index/pages/confirmFlight/confirmFlight",
     "pages/index/pages/flightPay/flightPay"
   ],

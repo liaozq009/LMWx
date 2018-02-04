@@ -5,14 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    flightList: [
+      { id: 'list1', startDate: '02-01 周一', startTime: '07:00', startPlace: '虹桥机场', endDate: '02-01 周一', endTime: '10:00', endPlace: '白云机场', totleTime: '3h', flightNum: 'T866', flightRule: '退改签规则', flightPrice: '900', originalPrice: '1100', childPrice: '680', infantPrice: '480', adultFuel: '50/0', childFuel: '0/0', infantFuel: '0/0'}
+    ],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    //console.log(options)
   },
 
   /**

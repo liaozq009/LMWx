@@ -1,2 +1,80 @@
 <!--pages/index/pages/flightInfo/flightInfo.wxml-->
-<text>pages/index/pages/flightInfo/flightInfo.wxml</text>
+<block wx:for="{{flightList}}" wx:key="this">
+  <view class="flight-hd">
+    <view class="flight-num">
+      <view>{{item.flightNum}}</view>
+      <view class="flight-rule">{{item.flightRule}}</view>
+    </view>
+    <view class="flight-info">
+      <view>
+        <view>{{item.startDate}}</view>
+        <view class="start-time">{{item.startTime}}</view>
+        <view>{{item.startPlace}}</view>
+      </view>
+      <view>
+        <view class="flight-arrow">
+          <image src='../common/images/flight-arrow.png'></image>
+        </view>
+        <view>{{item.totleTime}}</view>
+      </view>
+      <view>
+        <view>{{item.endDate}}</view>
+        <view class="end-time">{{item.endTime}}</view>
+        <view>{{item.endPlace}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="flight-detail">
+    <view>
+      成人票价: <text>￥{{item.flightPrice}}</text>  
+      基建/燃油费：<text>￥{{item.adultFuel}}</text>
+    </view>
+    <view>
+      儿童票价: <text>￥{{item.childPrice}}</text>  
+      基建/燃油费：<text>￥{{item.childFuel}}</text>
+    </view>
+    <view>
+      婴儿票价: <text>￥{{item.infantPrice}}</text>  
+      基建/燃油费：<text>￥{{item.infantFuel}}</text>
+    </view>
+  </view>
+</block>
+
+<view class="passenger-info">
+  <view class="add-passenger">
+    <view>乘机人</view>
+    <view><image src='../common/images/add.png'></image><text>添加常用旅客</text></view>
+  </view>
+  <view class="passenger-id">
+    <view><icon type="cancel" size="20" color=""/></view>
+    <view>
+      <view>廖章泉</view>
+      <view class="name-id">身份证：452227198812283353</view>
+    </view>
+    <view class="p-edit"><image src='../common/images/edit.png'></image></view>
+  </view>
+</view>
+
+<view class="passenger-call">
+  <view class="pas-people">联系人 <input type='text' value='LZQ'></input></view>
+  <view class="pas-phone">手机号 <input type='text' value='17302078169'></input></view>
+</view>
+
+<view class="insurance">
+  <view class="insurance-hd">
+    去程保险
+    <view>
+      不需要 <image src='../common/images/down.png'></image>
+    </view>
+  </view>
+  <view class="insurance-bd">
+    <view>保险 <icon type='info' size='20' color='#1AAD19'></icon></view>
+    <view>￥30元/人</view>
+  </view>
+</view>
+
+<view class="agree-clause">
+  <label><checkbox></checkbox>同意澜湄航空条款   </label>
+</view>
+
+<button type='primary' class="next-step">下一步 </button>

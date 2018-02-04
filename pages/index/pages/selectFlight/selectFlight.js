@@ -11,11 +11,28 @@ Page({
       { time: '2018-01-03', price: 800 },
     ],
     flightList:[
-      { startTime: '07:00', startPlace: '虹桥机场', endTime: '10:00', endPlace: '白云机场', totleTime: '3h', flightNum: 'T866', flightPrice: '900', originalPrice: '1100',},
-      { startTime: '09:00', startPlace: '虹桥机场', endTime: '12:00', endPlace: '白云机场', totleTime: '3h', flightNum: 'T966', flightPrice: '1000', originalPrice: '1200', },
+      { id: 'list1',open:false, startTime: '07:00', startPlace: '虹桥机场', endTime: '10:00', endPlace: '白云机场', totleTime: '3h', flightNum: 'T866', flightPrice: '900', originalPrice: '1100', flightDetail: { title: '自由飞', weight: '15kg行李额', remark: '可退可改', price: '900', reserve:'预定'}},
+      { id: 'list2', open: false,  startTime: '09:00', startPlace: '虹桥机场', endTime: '12:00', endPlace: '白云机场', totleTime: '3h', flightNum: 'T966', flightPrice: '1000', originalPrice: '1200', flightDetail: { title: '自由飞', weight: '20kg行李额', remark: '可退可改', price: '1000', reserve: '预定' }},
     ],
-    showFlightInfo:false,
-    hideFlightInfo:true,
+  },
+  priceToggle:function(e){
+    var id = e.currentTarget.id, list = this.data.flightList;
+    for (var i = 0, len=list.length; i<len; ++i){
+      if(id==list[i].id){
+        list[i].open = !list[i].open
+      }else{
+        list[i].open=false
+      }
+    }
+    this.setData({
+      flightList: list
+    })
+  },
+  reserveBtn:function(e){
+    var id = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '/pages/index/pages/flightInfo/flightInfo?id='+id+'',
+    })
   },
 
   /**

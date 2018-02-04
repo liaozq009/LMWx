@@ -2,10 +2,15 @@
 .lowPrice-wrap{
   display: flex;
   justify-content: space-around;
-  font-size: 24rpx;
+  font-size: 28rpx;
   text-align: center;
-  padding:20rpx 0;
   background: #fff;
+}
+.lowPrice-wrap>view{
+  padding:20rpx;
+}
+.lowPrice-wrap .lowPrice-active{
+  background: #ddd;
 }
 .list-mainInfo-time{
   display: flex;
@@ -19,7 +24,7 @@
   height:32rpx;
 }
 .start-place,.end-place,.original-price{
-  font-size: 24rpx;
+  font-size: 28rpx;
   margin-top: 10rpx;
 }
 .flight-price{
@@ -33,9 +38,56 @@
   justify-content: space-between;
   padding:10rpx 60rpx 20rpx;
   background: #fff;
-  font-size: 28rpx;
+  font-size: 36rpx;
 }
 .list-flightNum image{
   width:32rpx;
   height:32rpx;
+}
+.list-flightNum .arrow-up{
+  transform:rotate(180deg);
+  transition: .3s;
+}
+.price-detail{
+  height:0;
+  background: #f2f2f2;
+  overflow: hidden;
+}
+.price-detail .detail-transform{
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  transition: .3s;
+}
+.price-detail .detail-transform>view{
+  padding:20rpx 40rpx;
+}
+.price-detail .flight-type{
+  font-size: 36rpx;
+}
+.price-detail .flight-rule{
+  display: flex;
+}
+.price-detail .flight-rule>view{
+  font-size: 20rpx;
+  padding:10rpx;
+  color: green;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+  background: #fff;
+  border-radius: 4px;
+}
+.price-detail .flight-price{
+  font-size: 36rpx;
+  color: red;
+}
+.price-detail .flight-reserve{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+.price-detail-show{
+  height: auto;
+}
+.price-detail-show .detail-transform{
+  transform: translateY(0);
 }

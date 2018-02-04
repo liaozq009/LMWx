@@ -1,7 +1,7 @@
 <!--pages/index/pages/selectFlight/selectFlight.wxml-->
 <view class="lowPrice-wrap">
   <block wx:for="{{lowPrice}}" wx:key="this">
-    <view class="lowPrice-list">
+    <view class="lowPrice-list {{index==1 ? 'lowPrice-active' : ''}}">
       <view>{{item.time}}</view>
       <view>￥{{item.price}}</view>
     </view>
@@ -9,7 +9,7 @@
 </view>
 <view class="price-list-wrap">
   <block wx:for="{{flightList}}" wx:key="this">
-    <view class="price-list">
+    <view class="price-list" id="{{item.id}}" bindtap='priceToggle'>
       <view class="list-mainInfo">
         <view class="list-mainInfo-time">
           <view class="start-time">
@@ -17,7 +17,7 @@
             <view class="start-place">{{item.startPlace}}</view>
           </view>
           <view class="flight-arrow">
-            <view><image src='resouce/flight-arrow.png'></image></view>
+            <view><image src='../common/images/flight-arrow.png'></image></view>
             <view>{{item.totleTime}}</view>
           </view>
           <view class="end-time">
@@ -32,12 +32,28 @@
         <view class="list-flightNum">
           <view>{{item.flightNum}}</view>
           <view>
-            <view wx:if="{{hideFlightInfo}}"><image src='resouce/up.png'></image></view>
-            <view wx:if="{{showFlightInfo}}"><image src='resouce/down.png'></image></view>
+            <image src='../common/images/down.png' class="{{item.open ? 'arrow-up' :''}}"></image>
           </view>
         </view>
       </view>
       <view class="list-detailInfo"></view>
+    </view>
+    <view class="price-detail {{item.open ? 'price-detail-show' :''}}">
+      <view class="detail-transform">
+        <view>
+          <view class="flight-type">{{item.flightDetail.title}}</view>
+          <view class="flight-rule">
+            <view>{{item.flightDetail.weight}}</view>
+            <view>{{item.flightDetail.remark}}</view>
+          </view>
+        </view>
+        <view>
+          <view class="flight-price">￥{{item.flightDetail.price}}</view>
+          <button class="flight-reserve" type='primary' data-id="{{item.id}}" bindtap='reserveBtn'>
+            {{item.flightDetail.reserve}}
+          </button>
+        </view>
+      </view>
     </view>
   </block>
 </view>
