@@ -67,6 +67,7 @@
 .passenger-info .passenger-id .name-id{
   font-size: 24rpx;
   color: #bbb;
+  margin-top: 10rpx;
 }
 .passenger-info .passenger-id>view{
   float: left;
@@ -108,17 +109,37 @@
   height:40rpx;
   position: relative;
   top: 14rpx;
+  margin-left: 10rpx;
+}
+.insurance-hd .rotateImg{
+  transform:rotate(180deg);
+  transition: 0.3s;
 }
 .insurance-bd{
+  background: #f8f8f8;
+  height: 0;
+  overflow: hidden;
+}
+.showInsurance{
+  height: auto;
+}
+.showInsurance .insurance-transform{
+  transform: translateY(0);
+  transition: 0.3s;
+}
+.insurance-bd .insurance-transform{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding:20rpx;
-  background: #f8f8f8;
+}
+.insurance-transform{
+  transform: translateY(-50%);
+  transition: 0.3s;
 }
 .insurance-bd icon{
   position: relative;
-  top: 14rpx;
+  top: 4rpx;
   margin-left: 16rpx;
 }
 .agree-clause{
@@ -127,4 +148,7 @@
 }
 .agree-clause checkbox{
   margin-right: 20rpx; 
+}
+.button-wrap{
+  padding:30rpx;
 }

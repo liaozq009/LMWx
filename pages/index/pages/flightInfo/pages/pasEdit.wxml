@@ -1,0 +1,7 @@
+<!--pages/index/pages/flightInfo/pages/pasEdit.wxml-->
+<view class="container">
+  <view><text>姓名：</text><input type='text' value="{{name}}" bindinput='nameInput'/></view>
+  <view><text>身份证：</text><input type='idcard' value="{{ID}}" bindinput='IDInput'/></view>
+  <view><text>手机号：</text><input type='number' value="{{phone}}" bindinput='phoneInput'/></view>
+</view>
+<view class="button-wrap"><button type='primary' bindtap='editBtn'>确定</button></view>

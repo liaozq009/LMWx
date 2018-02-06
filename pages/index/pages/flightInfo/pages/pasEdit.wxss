@@ -1,0 +1,19 @@
+/* pages/index/pages/flightInfo/pages/pasEdit.wxss */
+.container{
+  padding: 20rpx;
+  background: #fff;
+}
+.container>view{
+  display: flex;
+  padding:20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.container>view>text{
+  width: 200rpx;
+}
+button{
+  margin-top: 30rpx;
+}
+.button-wrap{
+  padding:30rpx;
+}
