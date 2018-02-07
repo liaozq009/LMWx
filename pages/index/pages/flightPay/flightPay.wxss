@@ -1,1 +1,51 @@
 /* pages/index/pages/flightPay/flightPay.wxss */
+page{
+  font-size: 28rpx;
+}
+.flight-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  margin-top: 20rpx;
+  padding:20rpx;
+}
+.order-info{
+  background: #fff;
+  margin-top: 20rpx;
+  padding:20rpx;
+}
+.order-info>view{
+  margin-top: 20rpx;
+}
+.order-info .pay-tip{
+  font-size: 24rpx;
+  color: gray;
+}
+.order-info .pay-num text{
+  color: red;
+}
+.pay-type{
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.pay-type>view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20rpx;
+  background: #F0FBF3;
+  border:2rpx solid #53C64F;
+  border-radius: 12rpx;
+}
+.pay-type image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.pay{
+  margin-top: 60rpx;
+  padding:40rpx;
+}

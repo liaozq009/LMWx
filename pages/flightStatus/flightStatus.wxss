@@ -1,1 +1,45 @@
 /* pages/flight/flight.wxss */
+
+.flight-hd {
+  background: #fff;
+  overflow: hidden;
+}
+
+.flight-hd .active {
+  background: #eee;
+}
+
+.flight-hd>view {
+  float: left;
+  width: 50%;
+  padding: 20rpx 0;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.flight-bd {
+  padding: 20rpx;
+  background: #fff;
+}
+
+.flight-bd>view {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.flight-bd>view>view {
+  margin-right: 30rpx;
+}
+
+.search-wrap {
+  padding: 40rpx;
+  margin-top: 20rpx;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}

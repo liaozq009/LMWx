@@ -1,2 +1,63 @@
 <!--pages/index/pages/confirmFlight/confirmFlight.wxml-->
-<text>pages/index/pages/confirmFlight/confirmFlight.wxml</text>
+<view class="passenger p-wrap">
+  <view class="passenger-hd p-hd" bindtap='passengerToggle'>
+    乘客人信息
+    <view>
+      详细信息
+      <image src='../common/images/up.png' class="{{rotateImg ? 'rotateImg' : ''}}"></image>
+    </view>
+  </view>
+  <view class="passenger-bd p-bd {{showpassenger ? 'showpassenger' : ''}}">
+    <view class="passenger-transform pd-transform">
+      <view class="passenger-title p-title">乘机人1</view>
+      <view>{{name}}</view>
+      <view>身份证：{{ID}}</view>
+      <view>联系方式：{{phone}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="orderInfo p-wrap">
+  <view class="orderInfo-hd p-hd" bindtap='orderInfoToggle'>
+    订单信息
+    <view>
+      <image src='../common/images/up.png' class="{{rotateImgOrder ? 'rotateImgOrder' : ''}}"></image>
+    </view>
+  </view>
+  <view class="orderInfo-bd p-bd {{showOrderInfo ? 'showOrderInfo' : ''}}">
+    <view class="orderInfo-transform pd-transform">
+      <block wx:for="{{flightList}}" wx:key="this">
+        <view class="flight-hd">
+          <view class="flight-num">
+            <view>{{item.flightNum}}</view>
+            <view class="flight-rule" bindtap='flightRule'>{{item.flightRule}}</view>
+          </view>
+          <view class="flight-info">
+            <view>
+              <view>{{item.startDate}}</view>
+              <view class="start-time">{{item.startTime}}</view>
+              <view>{{item.startPlace}}</view>
+            </view>
+            <view>
+              <view class="flight-arrow">
+                <image src='../common/images/flight-arrow.png'></image>
+              </view>
+              <view>{{item.totleTime}}</view>
+            </view>
+            <view>
+              <view>{{item.endDate}}</view>
+              <view class="end-time">{{item.endTime}}</view>
+              <view>{{item.endPlace}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class="totle-price">总价 <text class="text-1">￥</text><text class="text-2">{{totlePrice}}</text></view>
+    </view>
+  </view>
+</view>
+
+<view class="next-step-wrap">
+  <view>合计 <text class="text-1">￥</text><text class="text-2">{{totlePrice}}</text></view>
+  <button type='primary' bindtap='nextStep'>下一步</button>
+</view>

@@ -8,7 +8,7 @@ Page({
     flightList: [
       { id: 'list1', startDate: '02-01 周一', startTime: '07:00', startPlace: '虹桥机场', endDate: '02-01 周一', endTime: '10:00', endPlace: '白云机场', totleTime: '3h', flightNum: 'T866', flightRule: '退改签规则', flightPrice: '900', originalPrice: '1100', childPrice: '680', infantPrice: '480', adultFuel: '50/0', childFuel: '0/0', infantFuel: '0/0'}
     ],
-    passengerInfo: [{ iconId: 'pas1', iconType: 'cancel', iconSize: '20', name: '廖章泉', IDTitle:'身份证:',ID: '452227198812283353', phone:'17302078169',src:'../common/images/edit.png',editId:'edite1'}],
+    passengerInfo: [{ iconId: 'pas1', iconType: 'cancel', iconSize: '20', name: '廖章泉', IDTitle:'身份证:',ID: '452227199912283353', phone:'17302078169',src:'../common/images/edit.png',editId:'edite1'}],
     rotateImg:false,
     showInsurance:false,
     radioChecked:false,
@@ -16,6 +16,12 @@ Page({
     insuranceInfo:'不需要',
     insurancePrice:'￥30元/人',
     agreeArray: [{ value: '1', name: '同意澜湄航空条款', checked: false}],
+  },
+  flightRule:function(){
+    wx.showModal({
+      title: '退改签规则',
+      content: '改签内容',
+    })
   },
   insuranceToggle:function(){
     this.setData({
@@ -40,7 +46,7 @@ Page({
   },
   addPassenger:function(){
     this.setData({
-      passengerInfo: [{ iconId: 'pas1', iconType: 'cancel', iconSize: '20', name: '廖章泉', IDTitle: '身份证:', ID: '452227198812283353', phone: '17302078169', src: '../common/images/edit.png', editId: 'edite1' }]
+      passengerInfo: [{ iconId: 'pas1', iconType: 'cancel', iconSize: '20', name: '廖章泉', IDTitle: '身份证:', ID: '452227199912283353', phone: '17302078169', src: '../common/images/edit.png', editId: 'edite1' }]
     })
   },
   deletePassenger:function(){

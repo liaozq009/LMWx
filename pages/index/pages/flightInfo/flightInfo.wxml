@@ -3,7 +3,7 @@
   <view class="flight-hd">
     <view class="flight-num">
       <view>{{item.flightNum}}</view>
-      <view class="flight-rule">{{item.flightRule}}</view>
+      <view class="flight-rule" bindtap='flightRule'>{{item.flightRule}}</view>
     </view>
     <view class="flight-info">
       <view>

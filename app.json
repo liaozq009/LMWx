@@ -1,14 +1,14 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/index/pages/flightInfo/flightInfo",
-    
-    "pages/index/pages/flightInfo/pages/pasEdit",
-    "pages/index/pages/selectFlight/selectFlight",
-   
     "pages/flightStatus/flightStatus",
+    "pages/flightStatus/flightStatus/pages/flightStatusDetail",
+    
+    "pages/index/index",
+    "pages/index/pages/flightPay/flightPay",
     "pages/index/pages/confirmFlight/confirmFlight",
-    "pages/index/pages/flightPay/flightPay"
+    "pages/index/pages/flightInfo/flightInfo",
+    "pages/index/pages/flightInfo/pages/pasEdit",
+    "pages/index/pages/selectFlight/selectFlight"
   ],
   "window":{
     "backgroundTextStyle":"light",

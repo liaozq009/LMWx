@@ -1,0 +1,31 @@
+<!--pages/flightStatus/flightStatus/pages/flightStatusDetail.wxml-->
+<view class="container">
+  <view class="flight-hd">
+    <view>航班号</view>
+    <view>起降机场</view>
+    <view>起降时间</view>
+    <view>状态</view>
+  </view>
+  <view class="flight-bd">
+    <block wx:for="{{flightList}}" wx:key="this">
+      <view class="flight-list">
+        <view>
+          <view>{{item.name}}</view>
+          <view>{{item.num}}</view>
+        </view>
+        <view>
+          <view>{{item.startPlace}}</view>
+          <view>{{item.endPlace}}</view>
+        </view>
+        <view>
+          <view>{{item.startTime}}</view>
+          <view>{{item.endTime}}</view>
+        </view>
+        <view class="status">
+          <view class="{{item.starusNo==0 ? '.red' : ''}}">{{item.status}}</view>
+          <image src='../../../../images/right-arrow.png'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

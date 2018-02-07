@@ -1,33 +1,5 @@
 /* pages/index/pages/flightInfo/flightInfo.wxss */
-.flight-hd{
-  padding:20rpx;
-  background: #fff;
-}
-.flight-hd .flight-num{
-  display: flex;
-  justify-content: space-between;
-  font-size: 28rpx;
-}
-.flight-num .flight-rule{
-  color: green;
-}
-.flight-info{
-   display: flex;
-   justify-content: space-around;
-   font-size: 28rpx;
-   margin-top: 30rpx;
-}
-.flight-info .start-time,.flight-info .end-time{
-  font-size: 40rpx;
-  font-weight: bold;
-}
-.flight-info .flight-arrow image{
-  width: 40rpx;
-  height: 40rpx;
-}
-.flight-info>view>view{
-  margin-top: 12rpx;
-}
+@import "../common/common.wxss";
 .flight-detail{
   padding:20rpx;
   background: #f8f8f8;
@@ -100,6 +72,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60rpx;
   padding:20rpx;
   background: #fff;
   margin-top: 20rpx;

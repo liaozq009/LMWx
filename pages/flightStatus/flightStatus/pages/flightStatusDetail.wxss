@@ -1,0 +1,30 @@
+/* pages/flightStatus/flightStatus/pages/flightStatusDetail.wxss */
+page{
+  font-size: 28rpx;
+}
+.flight-hd{
+  display: flex;
+  justify-content: space-around;
+  padding:20rpx;
+  background: #ECF0F3;
+}
+.flight-bd .flight-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:20rpx;
+  margin-top: 20rpx;
+  background: #fff;
+}
+.status{
+  display: flex;
+  justify-content: space-between;
+}
+.status image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+.status .red{
+  color: red;
+}

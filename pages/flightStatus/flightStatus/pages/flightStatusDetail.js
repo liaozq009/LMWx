@@ -1,53 +1,18 @@
-// pages/index/pages/flightPay/flightPay.js
+// pages/flightStatus/flightStatus/pages/flightStatusDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
-  },
-
-  payNow:function(){
-    wx.showToast({
-      title: '正在支付',
-      icon:'loading',
-      duration:6000
-    })
-    setTimeout(function(){
-      wx.showToast({
-        title: '支付成功',
-        icon:'success',
-        duration: 2000,
-        success:function(res){
-          setTimeout(function(){
-            wx.switchTab({
-              url: '/pages/index/index',
-            })
-          },2000)
-        }
-      })
-    },6000)
-    // wx.requestPayment({
-    //   'timeStamp': '',
-    //   'nonceStr': '',
-    //   'package': '',
-    //   'signType': 'MD5',
-    //   'paySign': '',
-    //   'success': function (res) {
-    //     console.log(res)
-    //   },
-    //   'fail': function (res) {
-    //     console.log(res)
-    //   }
-    // })
+    flightList: [{ name: '澜湄航空', num: 'T866', startPlace: '广州白云机场', endPlace: '上海虹桥机场', startTime: '07:29', endTime: '09:36', status: '正常', starusNo: '1' }, { name: '澜湄航空', num: 'T866', startPlace: '广州白云机场', endPlace: '上海虹桥机场', startTime: '07:29', endTime: '09:36', status: '延误',starusNo:'0' }],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+  
   },
 
   /**

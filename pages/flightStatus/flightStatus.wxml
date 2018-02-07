@@ -1,2 +1,52 @@
 <!--pages/flight/flight.wxml-->
-<text>pages/flight/flight.wxml</text>
+<view class="container">
+  <view class="flight-hd">
+    <view class="{{selectFlight ? 'active' :''}}" bindtap='selectFlight'>按城市查询</view>
+    <view class="{{selectNum ? 'active' :''}}" bindtap='selectNum'>按航班号查询</view>
+  </view>
+  <view class="flight-bd-city {{selectFlight ? 'show' :'hide'}}">
+    <view class="flight-bd">
+      <view class="from-city-wrap">
+        <view>出发城市：</view>
+        <picker bindchange='selectFromCity' value='{{index}}' range='{{fromCityArray}}'>
+          <view class="picker f-city-content">{{fromCityVal}}</view>
+        </picker>
+      </view>
+      <view class="to-city-wrap">
+        <view>到达城市：</view>
+        <picker bindchange='selectToCity' value='{{index}}' range='{{toCityArray}}'>
+          <view class="picker t-city-content">{{toCityVal}}</view>
+        </picker>
+      </view>
+      <view class="start-date">
+        <view class="date-title">出发日期：</view>
+        <picker mode="date" value='{{startDate}}' start="{{startMinDate}}" end="{{startMaxDate}}" bindchange='changeStartDate'>
+          <view class="st-date-content">{{startDate}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="search-wrap">
+      <button type='primary' bindtap='searchFlightCity'>查询</button>
+    </view>
+  </view>
+
+  <view class="flight-bd-num {{selectNum ? 'show' :'hide'}}">
+    <view class="flight-bd">
+      <view class="fflight-num">
+        <view>航班号：</view>
+        <input type='text' />
+      </view>
+      <view class="start-date">
+        <view class="date-title">出发日期：</view>
+        <picker mode="date" value='{{startDate2}}' start="{{startMinDate}}" end="{{startMaxDate}}" bindchange='changeStartDate2'>
+          <view class="st-date-content">{{startDate2}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="search-wrap">
+      <button type='primary' bindtap='searchFlightNum'>查询</button>
+    </view>
+  </view>
+
+
+</view>
