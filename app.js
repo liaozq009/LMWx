@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
-   
+  onLaunch: function (options) {
+  //  console.log(options)
   }
 })

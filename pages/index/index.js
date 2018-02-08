@@ -1,17 +1,7 @@
 //index.js
-// 日期选择
-var formatDate = function (ymd) { //日期格式化
-  return ymd.replace(/(\d{4})\-(\d{1,2})\-(\d{1,2})/g, function (ymdFormatDate, y, m, d) {
-    m < 10 && (m = '0' + m);
-    d < 10 && (d = '0' + d);
-    return y + '-' + m + '-' + d;
-  });
-};
-var today = new Date();
-var startTimeStr = new Date(today.getTime() + 86400000 * 0);
-var startTime = formatDate(startTimeStr.getFullYear() + '-' + (startTimeStr.getMonth() + 1) + '-' + startTimeStr.getDate());
-var endTimeStr = new Date(today.getTime() + 86400000 * 3);
-var endTime = formatDate(endTimeStr.getFullYear() + '-' + (endTimeStr.getMonth() + 1) + '-' + (endTimeStr.getDate()));
+var common = require('../common/common.js')
+var endTime = common.endTime;
+var startTime = common.startTime
 
 Page({
   data: {
@@ -27,9 +17,6 @@ Page({
     endDate: endTime,
     endMinDate: startTime,
     endMaxDate: '',
-  },
-  onLoad: function () {
-    
   },
   flightClick:function(e){
     var id = e.currentTarget.dataset.id;
@@ -95,9 +82,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.showLoading({
-      title: '正在加载...',
-    })
+    //console.log(getCurrentPages())
+    // wx.showLoading({
+    //   title: '正在加载...',
+    // })
   },
 
   /**
