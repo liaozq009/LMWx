@@ -63,3 +63,7 @@
   padding-right:30rpx;
   margin-top: 60rpx;
 }
+.background-bg{
+  width: 160rpx;
+  height: 160rpx;
+}

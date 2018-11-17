@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>z</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00908C" offset="0%"></stop>
+            <stop stop-color="#1F2C5C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#00908C" offset="0%"></stop>
+            <stop stop-color="#B4EC80" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-202.000000, -741.000000)">
+            <g id="网上值机" transform="translate(218.000000, 750.000000)">
+                <path d="M13.5098742,52 L38.008383,52 C39.1083227,52 40,52.8877296 40,54 C40,55.1045695 39.1021596,56 38.008383,56 L11.991617,56 C10.9504141,56 10.095825,55.2045485 10.007524,54.1761639 C9.93514617,54.0418661 9.87707633,53.8970269 9.83582469,53.7430737 L0.516937111,18.9645117 C0.231440628,17.8990244 0.857480991,16.8055148 1.93185165,16.5176381 C2.99878386,16.2317545 4.09445079,16.8611613 4.38064042,17.9292356 L13.5098742,52 Z" id="选座" fill="url(#linearGradient-1)"></path>
+                <path d="M44,46 L25.6785307,46 C21.7032577,46.9623436 17.6647508,44.5793872 16.5987383,40.6009742 L13.098345,27.5373289 C12.0166542,23.5004036 14.417407,19.349589 18.4422469,18.2711364 C22.4752933,17.1904848 26.6210784,19.5850451 27.7032979,23.6239435 L31.5553506,38 L48.0031611,38 C49.1063302,38 50.1051123,38.4484101 50.8283157,39.17222 C51.5527117,39.8972229 52,40.8960048 52,41.9968389 L52,62.0031611 C52,64.2105543 50.2046438,66 48,66 C45.790861,66 44,64.2058797 44,62.0031611 L44,46 Z M16,16 C11.581722,16 8,12.418278 8,8 C8,3.581722 11.581722,0 16,0 C20.418278,0 24,3.581722 24,8 C24,12.418278 20.418278,16 16,16 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
